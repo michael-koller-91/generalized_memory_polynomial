@@ -14,9 +14,9 @@ Two kinds of memory polynomials `f` are implemented:
 
 The parameter $M$ is called memory depth and the parameter $K$ is called degree.
 
-To determine the coefficients ($a_{mk}$ or $c_m$ and $a_{mkl}$),
+To determine the coefficients ($a_{mk}$ or $c_m$ and $a_{mjk}$),
 a data matrix $X$ is constructed which collects all terms of the form $x_{\text{in}}(n - m)$ and $|x_{\text{in}}(n - m)|^k$.
-Then, if also the samples $x_{\text{out}}(n)$ are collected a vector $x_{\text{out}}$ and if all coefficients are collected in a vector $a$,
+Then, if also the samples $x_{\text{out}}(n)$ are collected in a vector $x_{\text{out}}$ and if all coefficients are collected in a vector $c$,
 the solution is determined as
 ```math
     c = (X^{\mathrm{H}} X + \alpha I)^{-1} X^{\mathrm{H}} x_{\text{out}}
